@@ -57,6 +57,9 @@ taskkill /F /IM MicrosoftEdgeSH.exe
 mv C:\Windows\SystemApps\Microsoft.MicrosoftEdge_8wekyb3d8bbwe C:\Windows\SystemApps\Microsoft.MicrosoftEdge_8wekyb3d8bbwe_BAK
 reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Image File Execution Options\MicrosoftEdge.exe" /v Debugger /t REG_SZ /d "%%windir%%\System32\taskkill.exe" /f
 powershell -command "Get-WindowsPackage -Online | Where PackageName -like *InternetExplorer* | Remove-WindowsPackage -Online -NoRestart"
+%PROGRAMFILES(X86)%\Microsoft\Edge\Application\8*\Installer\setup --uninstall --force-uninstall --system-level
+%PROGRAMFILES(X86)%\Microsoft\Edge\Application\9*\Installer\setup --uninstall --force-uninstall --system-level
+del /F /Q %PROGRAMFILES(X86)%\Microsoft\Edge
 
 REM Disable Windows Tips
 reg add "HKLM\Software\Policies\Microsoft\Windows\CloudContent" /v DisableSoftLanding /t REG_DWORD /d 1 /f
