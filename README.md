@@ -55,6 +55,10 @@ This is a very handy tool that allows us to remove Windows components with a sin
 ![](https://raw.githubusercontent.com/adolfintel/Windows10-Privacy/master/data/cmd1809_1.jpg)
 * We will also need PowerShell, so click start, type ``PowerShell`` and run it as administrator
 ![](https://raw.githubusercontent.com/adolfintel/Windows10-Privacy/master/data/ps1809_1.jpg)
+* Download privacy_tweak.bat from this repo.
+
+## Running bat file
+For removing unwanted programs, there is a batch file on this repo. You may run the bat file to automatically apply the following changes, or you may enter the commands manually.
 
 ## Removing Windows Defender
 In the command prompt, type the following commands:
